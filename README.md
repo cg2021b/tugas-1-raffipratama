@@ -4,7 +4,7 @@
 **NRP**: 05111940000110
 
 ### Penugasan
-Pada tugas kali ini kita diminta untuk mencari benda disekitar yang berawalan B, G, atau L. Dan saya mendapatkan bendanya yaitu "Buku Binder". Berikut ini adalah foto yang saya ambil dari binder tersebut. 
+Pada tugas kali ini kita diminta untuk mencari benda disekitar yang berawalan B, G, atau L. Dan saya mendapatkan benda berupa "Buku Binder". Berikut ini adalah foto yang saya ambil dari binder tersebut. 
 
 ### Foto dari Belakang Atas
 <img src="images/belakangatas.jpg" width="400">
