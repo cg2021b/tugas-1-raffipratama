@@ -16,8 +16,8 @@ let canvas = document.getElementById('myCanvas');
 let gl = canvas.getContext('experimental-webgl');
 
 let vertices = [
-	...k1_alas, ...k1_atas, ...k1_shading, ...k1_layar,
-    ...k2_atas, ...k2_alas, ...k2_shading, ...k2_layar, ...k2_keycaps
+	...b1_depan, ...b1_kunci, ...b1_bkunci, ...b1_bayangan,
+    ...b2_depan, ...b2_kiri, ...b2_depan2, ...b2_bayangan, ...b2_kunci
 ];
 
 let vertexShaderCode = `
@@ -52,7 +52,7 @@ var colorLocation = gl.getAttribLocation(shaderProgram, "a_color");
 
 var color = [];
 
-for (let i = 0; i < k1_alas.length/2; i++) {
+for (let i = 0; i < b1_depan.length/2; i++) {
 	let r = 196/255;
 	let g = 192/255;
 	let b = 212/255;
@@ -61,7 +61,7 @@ for (let i = 0; i < k1_alas.length/2; i++) {
 	color.push(b);
 	color.push(1);
 }
-for (let i = 0; i < k1_atas.length/2; i++) {
+for (let i = 0; i < b1_kunci.length/2; i++) {
 	let r = 219/255;
 	let g = 219/255;
 	let b = 219/255;
@@ -70,7 +70,7 @@ for (let i = 0; i < k1_atas.length/2; i++) {
 	color.push(b);
 	color.push(1);
 }
-for (let i = 0; i < k1_layar.length/2; i++) {
+for (let i = 0; i < b1_bayangan.length/2; i++) {
 	let r = 50/255;
 	let g = 60/255;
 	let b = 63/255;
@@ -79,7 +79,7 @@ for (let i = 0; i < k1_layar.length/2; i++) {
 	color.push(b);
 	color.push(1);
 }
-for (let i = 0; i < k1_shading.length/2; i++) {
+for (let i = 0; i < b1_bkunci.length/2; i++) {
 	let r = 50/255;
 	let g = 60/255;
 	let b = 63/255;
@@ -88,7 +88,7 @@ for (let i = 0; i < k1_shading.length/2; i++) {
 	color.push(b);
 	color.push(1);
 }
-for (let i = 0; i < k2_atas.length/2; i++) {
+for (let i = 0; i < b2_depan.length/2; i++) {
 	let r = 196/255;
 	let g = 192/255;
 	let b = 212/255;
@@ -97,7 +97,7 @@ for (let i = 0; i < k2_atas.length/2; i++) {
 	color.push(b);
 	color.push(1);
 }
-for (let i = 0; i < k2_alas.length/2; i++) {
+for (let i = 0; i < b2_kiri.length/2; i++) {
 	let r = 132/255;
 	let g = 132/255;
 	let b = 138/255;
@@ -106,7 +106,7 @@ for (let i = 0; i < k2_alas.length/2; i++) {
 	color.push(b);
 	color.push(1);
 }
-for (let i = 0; i < k2_shading.length/2; i++) {
+for (let i = 0; i < b2_depan2.length/2; i++) {
 	let r = 196/255;
 	let g = 192/255;
 	let b = 212/255;
@@ -115,7 +115,7 @@ for (let i = 0; i < k2_shading.length/2; i++) {
 	color.push(b);
 	color.push(1);
 }
-for (let i = 0; i < k2_layar.length/2; i++) {
+for (let i = 0; i < b2_bayangan.length/2; i++) {
 	let r = 50/255;
 	let g = 60/255;
 	let b = 63/255;
@@ -124,7 +124,7 @@ for (let i = 0; i < k2_layar.length/2; i++) {
 	color.push(b);
 	color.push(1);
 }
-for (let i = 0; i < k2_keycaps.length/2; i++) {
+for (let i = 0; i < b2_kunci.length/2; i++) {
 	let r = 219/255;
 	let g = 219/255;
 	let b = 219/255;
@@ -165,7 +165,7 @@ function drawScene() {
 		1.0, 0.0, 0.0, 0.0,
 		0.0, 1.0, 0.0, 0.0,
 		0.0, 0.0, 1.0, 0.0,
-		0.5, dy, 0.0, 1.0,
+		0.5, 0, 0.0, 1.0,
 	]
 		
 	gl.clearColor(0.972, 0.941, 0.874, 1);
@@ -176,15 +176,15 @@ function drawScene() {
     
     gl.drawArrays(
 		gl.TRIANGLES, 
-		(k1_alas.length + k1_atas.length + k1_shading.length + k1_layar.length)/2, 
-		(k2_atas.length + k2_alas.length + k2_shading.length + k2_layar.length + k2_keycaps.length)/2
+		(b1_depan.length + b1_kunci.length + b1_bkunci.length + b1_bayangan.length)/2, 
+		(b2_depan.length + b2_kiri.length + b2_depan2.length + b2_bayangan.length + b2_kunci.length)/2
 	);
 		
 	gl.uniformMatrix4fv(u_matrix, false, leftObject);
     gl.drawArrays(
 		gl.TRIANGLES, 
 		0, 
-		(k1_alas.length + k1_atas.length + k1_shading.length + k1_layar.length )/2
+		(b1_depan.length + b1_kunci.length + b1_bkunci.length + b1_bayangan.length )/2
 	);
 	requestAnimationFrame(drawScene);
 }

@@ -1,5 +1,5 @@
-let k1_alas = [
-    //alas
+let b1_depan = [
+    //depan
     -0.71,  -0.93,  
     0.68,  -0.95, 
     0.77, -0.34, 
@@ -37,8 +37,8 @@ let k1_alas = [
     0.94, 0.79
 ];
 
-let k1_atas = [
-    //atas
+let b1_kunci = [
+    //kunci
     0.44, -0.29,
     0.48,  -0.33,
     0.77, -0.34,
@@ -68,8 +68,8 @@ let k1_atas = [
     0.8, -0.16
 ];
 
-let k1_layar = [
-    //layar
+let b1_bayangan = [
+    //b1_bayangan
     -0.9, 0.87,
     0.9, 0.79,
     -0.8, 0.91,
@@ -79,8 +79,8 @@ let k1_layar = [
     -0.8, 0.91
 ];
 
-let k1_shading = [
-    //shading bawah
+let b1_bkunci = [
+    //bayangan kunci
     0.81, -0.06,
     0.86, -0.14,
     0.8, -0.16,
@@ -90,8 +90,8 @@ let k1_shading = [
     0.86, -0.08
 ]
 
-let k2_atas = [
-    //atas
+let b2_depan = [
+    //depan
     0.55, 0.05,
     0.51, -0.37,
     0.46, 0,
@@ -117,8 +117,8 @@ let k2_atas = [
     0.42, 0.09
 ];
 
-let k2_alas = [
-    //alas
+let b2_kiri = [
+    //kiri
     -0.41, -0.89,
     -0.48, -0.83,
     -0.61, 0.57,
@@ -132,8 +132,8 @@ let k2_alas = [
     -0.7, 0.62
 ];
 
-let k2_shading = [
-    //atas
+let b2_depan2 = [
+    //depan
     -0.61, 0.57,
     0.42, 0.09,
     0.45, 0.13,
@@ -147,8 +147,8 @@ let k2_shading = [
     0.56, 0.2
 ];
 
-let k2_layar = [
-    //layar
+let b2_bayangan = [
+    //bayangan
     0.6, 0.91,
     0.6, 0.87,
     -0.61, 0.57,
@@ -174,7 +174,7 @@ let k2_layar = [
     0.59, 0.21
 ];
 
-let k2_keycaps = [
+let b2_kunci = [
     0.58, 0.06,
     0.46, 0,
     0.59, 0.21,
