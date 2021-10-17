@@ -26,6 +26,7 @@ const createGeometry = () => {
     const geometry = new THREE.BoxGeometry(5, 5, 5);
     const cube = new THREE.Mesh(geometry, material);
     cube.position.x = randomInRange(-30, 30)
+    cube.position.y = randomInRange(0, 10)
     cube.position.z = randomInRange(-10, 30)
 
     cubes.push(cube);
@@ -100,10 +101,11 @@ let lighting = function () {
 // const instructionsElement = document.getElementById("instructions");   
 let floorplane = function () {
     plane = new THREE.Mesh(
-        new THREE.BoxGeometry(80, 80, 2),
+        new THREE.BoxGeometry(70, 70, 2),
         new THREE.MeshPhongMaterial({ color: 0xe7f4f4, wireframe: false, shininess: 0.8 }));
     plane.rotation.x -= Math.PI / 2; // Rotate the floor 90 degrees
     plane.position.y = -3
+    plane.position.z = 8
     scene.add(plane);
 }
 
