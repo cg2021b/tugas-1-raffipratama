@@ -1,0 +1,11 @@
+Model Information:
+* title:	Friede
+* source:	https://sketchfab.com/3d-models/friede-3a750d8930b74ea4a98478b7f075d5ac
+* author:	vimune (https://sketchfab.com/vimune)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Friede" (https://sketchfab.com/3d-models/friede-3a750d8930b74ea4a98478b7f075d5ac) by vimune (https://sketchfab.com/vimune) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
